@@ -1,0 +1,65 @@
+public class Employee
+ {
+    private String name;
+    private String address;
+    private String number;
+
+    public String getName()
+    {
+    return name;
+    }
+    public void setName(String newName) 
+    {
+        this.name = newName;
+    }
+    
+    public String getAddress()
+    {
+    return address;
+    }
+    public void setAddress(String newAddress) 
+    {
+        this.address = newAddress;
+
+    }
+    public String getNumber()
+    {
+    return number;
+    }
+    public void setNumber(String newNumber) 
+    {
+        this.number = newNumber;
+
+    }
+
+
+}
+\\*************************************************************************************
+
+import java.util.Scanner;
+
+public class EmployeeMain {
+    public static void main(String[] args) 
+    {
+        System.out.println("Employee Details");
+        Scanner sc =new Scanner(System.in);
+        System.out.println("Enter the name");
+        String a = sc.nextLine();
+        
+
+        System.out.println("Enter the address");
+        String b = sc.nextLine();
+        
+        System.out.println("Enter the mobile");
+        String c = sc.nextLine();
+
+        Employee e=new Employee();
+        e.s94etName(a);
+        e.setAddress(b);
+        e.setNumber(c);
+        System.out.println("Name :"+e.getName());
+        System.out.println("Address :"+e.getAddress());
+        System.out.println("Mobile :"+e.getNumber());   
+
+    }
+}
